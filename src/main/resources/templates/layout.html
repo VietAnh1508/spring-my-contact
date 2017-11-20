@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Spring MyContact</title>
+
+    <!--<link href="../static/images/logo.png" th:href="@{/images/logo.png}" rel="shortcut icon" />-->
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/4.0.0-beta.2/css/bootstrap.min.css}"
+          rel="stylesheet" />
+
+    <!-- Custom style -->
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+
+    <script src="https://maxcdn.bootstrapcdn/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            th:src="@{/webjars/bootstrap/4.0.0-beta.2/js/bootstrap.min.js}"></script>
+</head>
+<body>
+    <nav th:fragment="header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="nav-bar" href="#">Spring MyContact</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Main content</h1>
+
+    <footer th:fragment="footer" class="container">
+        &copy; 2017 VA
+    </footer>
+</body>
+</html>

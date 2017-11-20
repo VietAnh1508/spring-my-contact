@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <nav th:replace="layout :: header"></nav>
+
+    <div class="container main-content list">
+        <div class="row">
+            <a href="#" class="btn btn-success pull-left">
+                <span class="glyphicon glyphicon-plus"></span> Add new contact
+            </a>
+            <form class="form-inline pull-right" action="#" method="GET">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="q" placeholder="Type contact name..."/>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+        <div class="row">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Viet Anh</td>
+                    <td>vietanhtong1508@gmail.com</td>
+                    <td>0123456789</td>
+                    <td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Viet Anh</td>
+                    <td>vietanhtong1508@gmail.com</td>
+                    <td>0123456789</td>
+                    <td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Viet Anh</td>
+                    <td>vietanhtong1508@gmail.com</td>
+                    <td>0123456789</td>
+                    <td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Viet Anh</td>
+                    <td>vietanhtong1508@gmail.com</td>
+                    <td>0123456789</td>
+                    <td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer th:replace="layout :: footer"></footer>
+</body>
+</html>
